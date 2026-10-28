@@ -4,6 +4,15 @@
 
 ## 디자인
 
+### V2 · 수원화성 메인 및 프로그램 상세 화면
+
+- [수원화성 대형 사진 메인](https://www.figma.com/design/pYiWaFUaCPBXPZp1tytH6f/?node-id=10-56)
+- [기업 산업관광 일정 상세](https://www.figma.com/design/pYiWaFUaCPBXPZp1tytH6f/?node-id=10-57)
+- `web/`: 현재 웹 시안. 수원화성 사진, 반도체 탐방·관광시설·기업 일정 메뉴, 상세 사이드바, 기업별 일정표, 프로그램 필터·상세, 조건 기반 추천 데모.
+- `design/v2-home.png`, `design/v2-schedule.png`: 편집 가능한 Figma V2 화면의 미리보기.
+
+이전 V1 구성안은 아래에 보존했습니다.
+
 [Figma 화면 구성안](https://www.figma.com/design/pYiWaFUaCPBXPZp1tytH6f/?node-id=4-19)
 
 홈 → 조건·상품 선택 → AI 일정 추천·수정 → 컨벤션센터 신청 → 신청 현황 → 센터 운영 화면까지 6개 화면을 구성했습니다. 검토용 한국어이며 실제 기업용 서비스는 일본어 우선입니다.
@@ -20,6 +29,7 @@
 저장소 폴더에서 `python -m http.server 4173`을 실행합니다.
 
 - 구성안: http://localhost:4173/design/
+- 현재 웹 시안: http://localhost:4173/web/
 - 초기 데모: http://localhost:4173/prototype/
 
 ## 구현 상태
@@ -27,3 +37,7 @@
 현재는 기획 화면과 프런트엔드 데모입니다. 실제 생성 AI, 인증·권한, 시설 DB, 신청 접수, 운영사 연결 및 예약 기능은 미구현입니다. 시설·프로그램·운영사는 가상 예시이며 예약 가능성을 보장하지 않습니다. 초기 데모는 정보 입력 후 신청서 텍스트를 다운로드할 수 있고 외부로 신청 정보를 전송하지 않습니다.
 
 화면 구성안은 설명된 서비스 흐름을 기준으로 작성했습니다. 최초 벤치마크: [Tech Tours Kansai](https://www.tech-tours-kansai.osaka-info.jp/).
+
+V2 프로그램 상세 화면은 [ICIMC 2026 Technical Program](https://icimc2026.org/technical-program-3/)의 상단 탐색·사진 배너·좌측 메뉴·시간표 구조를 참고했습니다. 로고, 학회 콘텐츠, 일정 이미지는 복제하지 않았습니다. 수원화성 사진은 사용자가 제공한 원본을 변경 없이 `web/assets/suwon-hwaseong.png`로 사용하며 원본의 출처 표기를 보존합니다. 현재 한국어는 디자인 검토용입니다.
+
+V2 추천은 가상 등록 프로그램의 연구 분야·수용 인원·관광 스타일·필수 선택을 검사합니다. 1~2일 일정으로 한정하며 중복 없는 후보가 부족할 때 조건 변경을 안내합니다. 영업일·교통 경로·실시간 예약·실제 AI·접수는 미연동입니다. 기업 사례는 실제 이력이 아닌 예시로 명시했습니다.
