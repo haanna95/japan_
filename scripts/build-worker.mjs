@@ -1,0 +1,7 @@
+import {readFile,mkdir,writeFile} from 'node:fs/promises';
+const assets={};
+for(const [name,type] of [['index.html','text/html; charset=utf-8'],['style.css','text/css; charset=utf-8'],['app.js','application/javascript; charset=utf-8'],['assets/suwon-hwaseong.png','image/png']])assets['/'+name]={type,data:(await readFile('web/'+name)).toString('base64')};
+const server=await readFile('server/gemini.mjs','utf8');
+const source=server+'\nconst assets='+JSON.stringify(assets)+';\nexport default {async fetch(request,env){const path=new URL(request.url).pathname;if(path==="/api/plan")return handlePlan(request,env);if(path==="/api/health")return json({ok:true,configured:!!env.GEMINI_API_KEY});if(!["GET","HEAD"].includes(request.method))return new Response("Method not allowed",{status:405});const a=assets[path==="/"?"/index.html":path];if(!a)return new Response("Not found",{status:404});return new Response(request.method==="HEAD"?null:Uint8Array.from(atob(a.data),c=>c.charCodeAt(0)),{headers:{"Content-Type":a.type,"Cache-Control":"no-cache","X-Content-Type-Options":"nosniff"}});}};';
+await mkdir('dist/server',{recursive:true});await writeFile('dist/server/index.js',source);await mkdir('dist/.openai',{recursive:true});await writeFile('dist/.openai/hosting.json',await readFile('.openai/hosting.json'));
+const worker=await import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'));if(typeof worker.default.fetch!=='function')throw Error('Invalid worker');console.log('Built and validated embedded-asset Worker');
