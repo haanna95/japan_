@@ -2,9 +2,10 @@ const translations=[["홈", "ホーム", "Home"], ["수원 반도체 탐방", "�
 (()=>{
 let language='ko';try{language=localStorage.getItem('suwon-language')||'ko';}catch{}if(!['ko','ja','en'].includes(language))language='ko';
 const originals=new WeakMap(),attributes=new WeakMap();
+translations.push(['수원화성 성문과 주변 도시 풍경','水原華城の城門と周辺の街並み','Suwon Hwaseong gate and surrounding city']);
 const dictionary=new Map(translations.map(row=>[row[0],row]));
 const pattern=new RegExp([...dictionary.keys()].sort((a,b)=>b.length-a.length).map(s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|'),'g');
-function translate(source){if(language==='ko')return source;return source.replace(pattern,key=>dictionary.get(key)[language==='ja'?1:2]);}
+function translate(source){if(language==='ko')return source;const exact=dictionary.get(source.trim());if(exact)return source.replace(source.trim(),exact[language==='ja'?1:2]);const units={박:['泊',' nights'],일:['日',' days'],명:['名',' people'],분:['分',' min'],시간:['時間',' hours'],년:['年',''],월:['月',''],건:['件',' events'],호:['号',''],층:['階','']};let value=source.replace(/(\d+)\s*(시간|박|일|명|분|년|월|건|호|층)(?![가-힣])/g,(_,n,u)=>n+units[u][language==='ja'?0:1]);return value.replace(pattern,key=>dictionary.get(key)[language==='ja'?1:2]);}
 const skip=el=>el?.closest('script,style,textarea,[data-no-translate]');
 let observer;
 function apply(){observer?.disconnect();document.documentElement.lang=language;
