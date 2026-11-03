@@ -425,3 +425,28 @@ ASIC·SoC 설계, 검증 및 양산 지원 || ASIC・SoC設計、検証、量産
 Physical AI 기반 공정 최적화와 정밀 제조 || Physical AIによるプロセス最適化と精密製造 || Physical-AI process optimization and precision manufacturing
 산업용 X-ray 검사, 전자현미경(SEM), 전자빔 기술 || 産業用X線検査、電子顕微鏡（SEM）、電子ビーム技術 || Industrial X-ray inspection, SEM and electron-beam technology
 고정밀 비파괴 검사와 미세구조 분석 기술 || 高精度非破壊検査と微細構造解析 || High-precision nondestructive inspection and microstructure analysis
+
+한국나노기술원 KANC 팹투어 안내 || KANCファブツアーのご案内 || KANC Fab Tour Information
+KANC 팹투어 안내 || KANCファブツアー案内 || KANC Fab Tour
+팹투어 안내 보기 → || ファブツアー案内を見る → || View fab tour information →
+기관 자세히 보기 → || 機関の詳細を見る → || Institute details →
+연구개발·산업화 지원기관 || 研究開発・産業化支援機関 || R&D and commercialization support institute
+나노패턴 형성부터 증착·식각, 특성 분석, 후공정까지 반도체·나노기술 연구개발과 산업화를 지원합니다. || ナノパターン形成、成膜・エッチング、特性評価、後工程まで半導体・ナノ技術の研究開発と産業化を支援します。 || Supports semiconductor and nanotechnology R&D and commercialization, from nanopatterning and deposition/etching to characterization and backend processes.
+연구개발(R&D) · 산업화 지원 · 수원시 영통구 광교로 109 || 研究開発・産業化支援・水原市霊通区光教路109 || R&D · Commercialization support · 109 Gwanggyo-ro, Yeongtong-gu, Suwon
+연구개발(R&D) || 研究開発(R&D) || Research & Development
+산업화 지원 || 産業化支援 || Commercialization support
+나노리소패턴 지원라인 || ナノリソパターン支援ライン || Nanolithography support line
+나노패턴 형성 공정 || ナノパターン形成工程 || Nanopattern fabrication
+나노R&D 지원라인 || ナノR&D支援ライン || Nano R&D support line
+에피 및 증착공정 || エピタキシー・成膜工程 || Epitaxy and deposition
+특성평가 지원라인 || 特性評価支援ライン || Characterization support line
+표면·구조·특성 분석 || 表面・構造・特性分析 || Surface, structure and property analysis
+Si & MEMS 지원라인 || Si・MEMS支援ライン || Si & MEMS support line
+8인치 기반 Si & MEMS 공정 || 8インチSi・MEMS工程 || 8-inch Si & MEMS processes
+나노산업화 지원라인 || ナノ産業化支援ライン || Nano commercialization support line
+산업화 지원을 위한 증착·식각 공정 || 産業化支援のための成膜・エッチング工程 || Deposition and etching for commercialization
+후공정 지원라인 || 後工程支援ライン || Backend process support line
+후공정 및 신뢰성 측정 || 後工程・信頼性評価 || Backend processing and reliability testing
+신뢰성 측정장비 || 信頼性測定装置 || Reliability testing equipment
+시설 현황은 제공된 안내자료를 기준으로 정리했습니다. 실제 견학 가능 시설은 기관이 승인한 범위에 따라 달라집니다. || 施設情報は提供された案内資料に基づきます。見学可能な施設は機関の承認範囲によって異なります。 || Facility information is based on the supplied guide. Tour access depends on the scope approved by the institute.
+사전 신청 · 기관 승인 필요 || 事前申請・機関の承認が必要 || Advance application · Institutional approval required
