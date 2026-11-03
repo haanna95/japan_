@@ -377,3 +377,24 @@ AI 퀀텀시대 반도체 소부장 기술혁신 포럼 || AI・量子時代の�
 한국나노기술원 원문 공고 보기 ↗ || 韓国ナノ技術院の原文公募を見る ↗ || Read the original KANC announcement ↗
 산업관광 일정에 포함 요청 ↗ || 産業観光の旅程に追加を希望 ↗ || Request inclusion in my itinerary ↗
 희망 프로그램으로 선택해 일정 초안에 반영합니다. 이 버튼은 실제 참가 신청이나 예약을 접수하지 않습니다. || 希望プログラムとして旅程案に反映します。実際の参加申込や予約は行われません。 || Adds this as a preference for your draft itinerary. This does not submit an attendance application or booking.
+
+기업·연구기관 탐방 || 企業・研究機関視察 || Company & Research Visits
+기업·연구기관 탐방 살펴보기 ↗ || 企業・研究機関の視察を見る ↗ || Explore company and research visits ↗
+한국나노기술원 KANC 팹투어 (사전 승인 필요) || 韓国ナノ技術院 KANCファブツアー（事前承認が必要） || KANC Fab Tour (prior approval required)
+한국나노기술원 KANC 팹투어 || 韓国ナノ技術院 KANCファブツアー || Korea Advanced Nano Fab Center — Fab Tour
+연구기관 · 사전 신청형 견학 || 研究機関・事前申請制の見学 || Research institute · Advance application
+반도체 기술과 공정 인프라를 만나는 방문 프로그램입니다. || 半導体技術とプロセス設備を見学するプログラムです。 || Visit semiconductor technology and process infrastructure.
+반도체 공정과 나노기술 인프라를 소개하는 견학 프로그램입니다. || 半導体プロセスとナノ技術設備を紹介する見学プログラムです。 || A tour introducing semiconductor processes and nanotechnology infrastructure.
+홍보영상 30분 이내 · 팹투어 30분 이내 · 1회 15명 제한 || 紹介映像30分以内・見学30分以内・1回15名まで || Video up to 30 min · Tour up to 30 min · Maximum 15 per session
+공식 안내 기준이며, 방문일과 참여 가능 여부는 기관 검토·승인 후 확정됩니다. || 公式案内に基づきます。訪問日と参加可否は機関の審査・承認後に決定します。 || Based on official guidance; dates and participation depend on institutional review and approval.
+견학 순서 || 見学の流れ || Tour sequence
+홍보영상 시청 · 30분 이내 || 紹介映像の視聴・30分以内 || Introduction video · Up to 30 minutes
+팹투어 · 30분 이내 || ファブ見学・30分以内 || Fab tour · Up to 30 minutes
+투어 종료 및 퇴장 후 사진촬영 || 見学終了・退出後に写真撮影 || Photo session after the tour and exit
+참여 조건 || 参加条件 || Participation requirements
+방문 예정일 최소 1주일 전 신청 || 訪問予定日の1週間前までに申請 || Apply at least one week before the visit
+1회 15명 제한 · 신청자에 한해 진행 || 1回15名まで・申請者のみ参加可能 || Maximum 15 per session · Applicants only
+회원가입 → 팹투어 신청 → 검토·승인 → 방문 || 会員登録 → 見学申請 → 審査・承認 → 訪問 || Register → Apply for tour → Review and approval → Visit
+장소: 경기도 수원시 영통구 광교로 109, 한국나노기술원 || 所在地：京畿道水原市霊通区光教路109、韓国ナノ技術院 || Location: KANC, 109 Gwanggyo-ro, Yeongtong-gu, Suwon, Gyeonggi-do
+15명 초과 시 분할 진행 협의가 필요합니다. 방문까지 1주일 미만이면 기관 확인이 필요합니다. 분할 운영·해외 기업 참여·통역·비용은 별도 확인하며 예약은 확정되지 않습니다. || 15名を超える場合は分割実施の協議が必要です。訪問まで1週間未満の場合は機関への確認が必要です。分割実施、海外企業の参加、通訳、費用は別途確認し、予約は未確定です。 || Groups over 15 require discussion of split sessions. Visits less than a week away require institutional confirmation. Split sessions, overseas participation, interpretation and costs must be confirmed; no booking is guaranteed.
+KANC 팹투어 공식 안내 ↗ || KANCファブツアー公式案内 ↗ || Official KANC fab tour information ↗

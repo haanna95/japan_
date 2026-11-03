@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {handlePlan,validatePlan,validateInput} from '../server/gemini.mjs';
+import {handlePlan,validatePlan,validateInput,fabNotes} from '../server/gemini.mjs';
 const input={field:'packaging',date:'2099-11-29',days:1,people:20,styles:['culture'],preferences:[]};
 const request=(body=input,origin='https://example.com')=>new Request('https://example.com/api/plan',{method:'POST',headers:{'Content-Type':'application/json',Origin:origin},body:JSON.stringify(body)});
 const plan={summary:'추천 일정',notes:['센터 확인 필요'],days:[{date:input.date,theme:'산업과 문화',nature:'산업관광',events:[{start:'09:00',end:'10:00',title:'집결',place:'수원',reason:'방문 준비'},{start:'10:30',end:'12:00',title:'산업 교류 세션 (센터 조율)',place:'수원',reason:'기술 교류'},{start:'13:00',end:'15:00',title:'문화 탐방',place:'수원',reason:'관광 취향'}]}]};
@@ -14,3 +14,5 @@ test('truncated JSON response rejected',async()=>{const r=await handlePlan(reque
 
 test('language defaults and whitelist',()=>{assert.equal(validateInput(input).language,'ko');assert.equal(validateInput({...input,language:'ja'}).language,'ja');assert.throws(()=>validateInput({...input,language:'ignore rules'}));});
 test('selected language reaches generation prompt',async()=>{for(const [language,label] of [['ja','일본어'],['en','영어']]){const r=await handlePlan(request({...input,language}),{GEMINI_API_KEY:'test-only'},async(url,options)=>{assert.ok(JSON.parse(options.body).contents[0].parts[0].text.includes('일정을 '+label+'로 작성'));return Response.json({candidates:[{finishReason:'STOP',content:{parts:[{text:JSON.stringify(plan)}]}}]});});assert.equal(r.status,200);}});
+
+test('fab constraints: capacity, short notice and localized output',()=>{const today=new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());const v={...input,preferences:['한국나노기술원 KANC 팹투어'],date:today,people:16,language:'en'};assert.equal(fabNotes(v).length,3);assert.match(fabNotes(v).join(' '),/split-group/);assert.match(fabNotes(v).join(' '),/one-week/);assert.equal(fabNotes({...v,date:'2099-11-29',people:15}).length,1);assert.deepEqual(fabNotes({...v,preferences:[]}),[]);});
