@@ -398,3 +398,30 @@ AI 퀀텀시대 반도체 소부장 기술혁신 포럼 || AI・量子時代の�
 장소: 경기도 수원시 영통구 광교로 109, 한국나노기술원 || 所在地：京畿道水原市霊通区光教路109、韓国ナノ技術院 || Location: KANC, 109 Gwanggyo-ro, Yeongtong-gu, Suwon, Gyeonggi-do
 15명 초과 시 분할 진행 협의가 필요합니다. 방문까지 1주일 미만이면 기관 확인이 필요합니다. 분할 운영·해외 기업 참여·통역·비용은 별도 확인하며 예약은 확정되지 않습니다. || 15名を超える場合は分割実施の協議が必要です。訪問まで1週間未満の場合は機関への確認が必要です。分割実施、海外企業の参加、通訳、費用は別途確認し、予約は未確定です。 || Groups over 15 require discussion of split sessions. Visits less than a week away require institutional confirmation. Split sessions, overseas participation, interpretation and costs must be confirmed; no booking is guaranteed.
 KANC 팹투어 공식 안내 ↗ || KANCファブツアー公式案内 ↗ || Official KANC fab tour information ↗
+
+주력 기술 || 主力技術 || Core technology
+연구 방향 || 研究開発分野 || Research focus
+위치 || 所在地 || Location
+수원 반도체 기업 || 水原の半導体企業 || Semiconductor companies in Suwon
+기업 상세 보기 → || 企業の詳細を見る → || Company details →
+지도 크게 보기 ↗ || 大きな地図を見る ↗ || Open larger map ↗
+위치 지도 || 所在地の地図 || Location map
+지도가 표시되지 않으면 지도 링크를 이용해 주세요. || 地図が表示されない場合はリンクをご利用ください。 || If the map does not load, use the map link.
+기업·기술 자료 보기 ↗ || 企業・技術資料を見る ↗ || Company and technology information ↗
+방문·기술교류는 별도 협의가 필요합니다. || 訪問・技術交流は別途協議が必要です。 || Visits and technical exchanges require separate arrangements.
+연구 방향은 공개된 제품·기술 소개를 바탕으로 요약했습니다. 방문·기술교류는 별도 협의가 필요합니다. || 研究分野は公開された製品・技術情報をもとに要約しています。訪問・技術交流は別途協議が必要です。 || Research focus summarizes public product and technology information. Visits and technical exchanges require separate arrangements.
+BNSR · 비엔에스알 || BNSR || BNSR
+디지털프론티어 || デジタルフロンティア || Digital Frontier
+에이직랜드 || ASICLAND || ASICLAND
+레이저발테크놀러지 || Laservall Technology || Laservall Technology
+쎄크 (SEC) || SEC || SEC
+Sensor on Wafer 기반 공정 진단·센서 웨이퍼 || Sensor on Waferによるプロセス診断・センサーウェハー || Sensor-on-wafer process diagnostics and sensor wafers
+하이브리드 센서 웨이퍼와 공정 진단 자동화 || ハイブリッドセンサーウェハーとプロセス診断の自動化 || Hybrid sensor wafers and automated process diagnostics
+HBM·DDR5 메모리 및 웨이퍼 검사 장비 || HBM・DDR5メモリとウェハーの検査装置 || HBM/DDR5 memory and wafer test equipment
+차세대 HBM 웨이퍼 테스트 장비 개발 || 次世代HBMウェハーテスト装置開発 || Next-generation HBM wafer testers
+ASIC·SoC 설계, 검증 및 양산 지원 || ASIC・SoC設計、検証、量産支援 || ASIC/SoC design, verification and production support
+고성능 시스템반도체 설계와 설계·양산 통합 지원 || 高性能システム半導体設計と設計・量産の統合支援 || High-performance system-chip design and integrated production support
+레이저 정밀가공·미세접합·지능형 제조 플랫폼 || レーザー精密加工・微細接合・知能型製造プラットフォーム || Precision laser processing, micro-joining and intelligent manufacturing
+Physical AI 기반 공정 최적화와 정밀 제조 || Physical AIによるプロセス最適化と精密製造 || Physical-AI process optimization and precision manufacturing
+산업용 X-ray 검사, 전자현미경(SEM), 전자빔 기술 || 産業用X線検査、電子顕微鏡（SEM）、電子ビーム技術 || Industrial X-ray inspection, SEM and electron-beam technology
+고정밀 비파괴 검사와 미세구조 분석 기술 || 高精度非破壊検査と微細構造解析 || High-precision nondestructive inspection and microstructure analysis
