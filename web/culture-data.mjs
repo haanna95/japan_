@@ -1,0 +1,24 @@
+const content=(id,menu)=>`https://www.visitsuwon.or.kr/base/contents/view?contentsNo=${id}&menuLevel=3&menuNo=${menu}`;
+const board=id=>`https://www.visitsuwon.or.kr/base/board/read?boardManagementNo=9&boardNo=${id}&menuLevel=2&menuNo=60`;
+const course=(id,name,stops,meeting=stops[0])=>({id,name,stops,meeting,minutes:60});
+export const cultureCatalog=[
+{id:'C01',group:'해설과 함께 걷기',name:'행궁동 왕의 골목여행',desc:'마을해설사와 함께 골목의 역사와 일상을 만나는 네 가지 도보 코스.',icon:'WALK',place:'행궁동 일원',url:content(17,27),courseUrl:content(18,28),minutes:60,min:2,max:15,advanceDays:7,closedDays:[1],conditions:'한국어 해설 · 2~15명 · 무료 · 7일 전 온라인 예약. 월요일·명절 당일·우천 및 혹한·혹서기 등 휴무. 외국어 통역과 분반은 별도 협의합니다.',courses:[
+course('C01-1','1코스 · 행궁동 사람길',['행궁동 행정복지센터','생태교통마을','화서문~장안문 길','수원전통문화관','행궁 마을길(행리단길)','나혜석 생가터','신풍동 벽화골목','(구)신풍초']),
+course('C01-2','2코스 · 순례길 한바퀴',['종로교회','순교터','북수동성당','팔부자 문구거리','행궁동 벽화마을','방화수류정','무형유산전수회관','동신교회','아담스기념관','팔달문화센터','수원화성박물관']),
+course('C01-3','3코스 · 사통팔달의 길',['정조테마공연장','수원화성박물관','수원사','왕이 만든 시장(남문시장)','팔달사','행궁동 공방거리(후소)','한데 우물길','정조테마공연장']),
+course('C01-4','4코스 · K-드라마 길',['행궁동 행정복지센터','이상한 변호사 우영우 촬영지','선재 업고 튀어 촬영지','법대로 사랑하라 촬영지','그 해 우리는 촬영지','이태원 클라쓰 촬영지','행궁동 행정복지센터'])]},
+{id:'C02',group:'해설과 함께 걷기',name:'근대여행 골목길 해설투어',desc:'산루리 모-단길을 따라 수원의 근대 건축과 도시의 변화를 살펴보는 해설 여행.',icon:'MODERN',place:'팔달산 아래 산루리 일원',url:content(76,76),minutes:60,min:1,max:15,advanceDays:7,closedDays:[1],conditions:'한국어 해설 · 1~15명 · 8세 이상 · 무료 · 7일 전 온라인 예약. 월요일·명절 당일·혹한·혹서기 등 휴무. 통역과 분반은 별도 협의합니다.',courses:[
+course('C02-1','1코스 · 근대 건축과 배움의 길',['구 경기도청 구관','수원시민회관','수원시립중앙도서관','수원향교','매산초등학교'],'구 경기도청 입구'),
+course('C02-2','2코스 · 근대 생활과 문화의 길',['인쇄골목','구 수원문화원','구 수원시청사','수원 중화교회','수원 구 부국원','성공회 수원교회','팔달사','남문 로데오 청소년 문화공연장'],'수원향교 앞')],courseNote:'근대여행의 코스 부제는 이해를 돕기 위해 붙였습니다. 경유지와 집결지는 공식 안내 기준입니다.'},
+{id:'C03',group:'역사 명소 둘러보기',name:'수원화성',desc:'성문과 성곽을 따라 수원의 역사와 도시 풍경을 만나는 세계유산 산책.',icon:'HERITAGE',place:'수원화성 일원',url:content(1,1)},
+{id:'C04',group:'역사 명소 둘러보기',name:'화성행궁',desc:'정조의 행차와 왕실의 이야기를 따라 행궁의 공간을 둘러보는 역사 탐방.',icon:'PALACE',place:'화성행궁 · 수원시 팔달구 정조로 825',url:content(2,4)},
+{id:'C05',group:'역사 명소 둘러보기',name:'화령전',desc:'정조의 어진을 모신 공간에서 왕을 기리는 역사와 건축을 살펴보는 방문.',icon:'HISTORY',place:'화령전 · 화성행궁 인근',url:content(3,9)},
+{id:'C06',group:'전통문화 체험',name:'국궁체험',desc:'연무대에서 전통 활쏘기를 경험하는 참여형 문화 프로그램.',icon:'ARCHERY',place:'수원화성 연무대 · 창룡대로103번길 8',url:board(112),max:25,conditions:'1회 25명 · 만 7세 이상 · 1회 10발. 눈·비와 대기질에 따라 운영이 중단될 수 있습니다. 비용과 운영시간은 공식 안내를 확인하세요.'},
+{id:'C07',group:'전통문화 체험',name:'전통 놀이 체험존',desc:'화성행궁에서 투호·윷놀이·제기차기 등 전통놀이를 즐기는 체험.',icon:'PLAY',place:'화성행궁 우화관 앞마당',url:board(328),conditions:'우천·안전 문제 발생 시 운영 중단. 행궁 입장 및 야간 운영 여부는 방문일 기준 확인이 필요합니다.'},
+{id:'C08',group:'색다르게 즐기는 역사',name:'XR버스 1795행',desc:'투명 디스플레이와 확장현실로 정조의 1795년 행차 이야기를 만나는 순환형 관광.',icon:'XR',place:'연무대 주차장',url:board(248),minutes:40,max:18,closedDays:[1,2],conditions:'약 40분 · 회당 18명 · 월·화요일 휴차. 터치수원 앱 예약과 탑승 QR 체크인이 필요합니다. 잔여 좌석과 외국어 지원은 별도 확인합니다.'},
+{id:'C09',group:'색다르게 즐기는 역사',name:'화성어차',desc:'관광열차를 타고 수원화성 주요 시설을 둘러보는 순환 여행.',icon:'TRAIN',place:'연무대 출발·도착',url:board(114),max:36,conditions:'최대 36명 · 한국어 해설 및 영어·일본어·중국어 오디오 안내. 개인 이어폰 준비. 운행시간·좌석·요금은 공식 안내를 확인하세요.'},
+{id:'C10',group:'색다르게 즐기는 역사',name:'수원화성의 비밀',desc:'수원의 이야기를 바탕으로 미션을 해결하며 명소를 탐방하는 스마트 관광 콘텐츠.',icon:'MISSION',place:'수원화성 일원',url:board(109),conditions:'이용 가능한 콘텐츠·기기·언어 및 운영 여부는 공식 안내에서 확인해 주세요.'},
+{id:'C11',group:'직접 걸으며 탐방하기',name:'화성행궁 스탬프 투어',desc:'행궁 안의 열 곳을 찾아 도장을 모으며 공간을 살펴보는 자율 탐방.',icon:'STAMP',place:'화성행궁 · 수원시 팔달구 정조로 825',url:board(334),conditions:'행궁 관람시간 내 체험. 전용 용지는 매표소에서 판매하며 입장·용지·코팅 비용을 확인해 주세요.'},
+{id:'C12',group:'직접 걸으며 탐방하기',name:'수원화성 성곽길 스탬프 투어',desc:'성곽길을 걸으며 주요 시설의 스탬프와 수원화성의 풍경을 모으는 산책.',icon:'STAMP',place:'수원화성 성곽길',url:board(110),conditions:'걷는 구간에 따라 소요시간이 달라집니다. 스탬프 운영 지점과 용지 수령 방법은 공식 안내를 확인하세요.'}
+].map(p=>({conditions:'관람시간·요금·단체 방문 조건은 방문일 기준 공식 안내를 확인해 주세요.',...p,checked:'2026-11-05'}));
+export const cultureOptions=cultureCatalog.flatMap(p=>p.courses?p.courses.map(c=>({...p,...c,parentId:p.id,name:p.name+' — '+c.name,place:c.meeting})): [{...p,parentId:p.id}]);

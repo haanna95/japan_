@@ -1,0 +1,9 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {cultureCatalog,cultureOptions} from '../web/culture-data.mjs';
+import {validateInput,selectedCulture,cultureNotes,handlePlan} from '../server/gemini.mjs';
+const base={field:'packaging',date:'2099-11-30',days:1,people:20,styles:['culture'],preferences:['근대여행 골목길 해설투어'],cultureIds:['C02-2']};
+test('selected route preserves official meeting point distinct from first stop',()=>{const [route]=selectedCulture(validateInput(base));assert.equal(route.meeting,'수원향교 앞');assert.equal(route.stops[0],'인쇄골목');assert.equal(route.minutes,60);assert.equal(route.end,'남문 로데오 청소년 문화공연장');assert.equal(cultureCatalog.length,12);assert.equal(new Set(cultureOptions.map(p=>p.id)).size,16);});
+test('reject unknown and excessive course IDs',()=>{assert.throws(()=>validateInput({...base,cultureIds:['invented']}));assert.throws(()=>validateInput({...base,cultureIds:Array(7).fill('C02-2')}));assert.equal(validateInput({...base,cultureIds:undefined}).cultureIds.length,0);});
+test('capacity and closure constraints produce review notes',()=>{const notes=cultureNotes({...base,date:'2099-11-30'});assert.ok(notes.some(n=>n.includes('분반')));assert.ok(notes.some(n=>n.includes('7일 전')));const monday='2099-11-30';assert.equal(new Date(monday).getUTCDay(),1);assert.ok(notes.some(n=>n.includes('휴무일')));});
+test('trusted course metadata reaches model, even if preference label differs',async()=>{let prompt='';const request=new Request('https://example.com/api/plan',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({...base,preferences:['관광']})});await handlePlan(request,{GEMINI_API_KEY:'test-only'},async(_,opts)=>{prompt=JSON.parse(opts.body).contents[0].parts[0].text;return new Response('',{status:503});});assert.match(prompt,/수원향교 앞/);assert.match(prompt,/인쇄골목/);assert.match(prompt,/"minutes":60/);assert.match(prompt,/"max":15/);assert.match(prompt,/"closedDays":\[1\]/);});
