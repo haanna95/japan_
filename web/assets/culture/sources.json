@@ -1,0 +1,98 @@
+[
+  {
+    "id": "C01",
+    "image": "assets/culture/c01.jpg",
+    "source": "https://www.visitsuwon.or.kr/template/resources/images/cont/img241.jpg",
+    "page": "https://www.visitsuwon.or.kr/base/contents/view?contentsNo=17&menuLevel=3&menuNo=27",
+    "bytes": 361534,
+    "caption": "행궁동 골목 풍경"
+  },
+  {
+    "id": "C02",
+    "image": "assets/culture/c02.jpg",
+    "source": "https://www.visitsuwon.or.kr/storage/ck/2024/03/BwBcMcLyfvbDvZ3bYNYY.jpg",
+    "page": "https://www.visitsuwon.or.kr/base/contents/view?contentsNo=76&menuLevel=3&menuNo=76",
+    "bytes": 60355,
+    "caption": "근대여행 경유지 · 수원 구 부국원"
+  },
+  {
+    "id": "C03",
+    "image": "assets/culture/c03.jpg",
+    "source": "https://www.visitsuwon.or.kr/template/resources/images/cont/img233.jpg",
+    "page": "https://www.visitsuwon.or.kr/base/contents/view?contentsNo=1&menuLevel=3&menuNo=1",
+    "bytes": 525635,
+    "caption": "수원화성 방화수류정과 주변 풍경"
+  },
+  {
+    "id": "C04",
+    "image": "assets/culture/c04.jpg",
+    "source": "https://www.visitsuwon.or.kr/template/resources/images/cont/img253.jpg",
+    "page": "https://www.visitsuwon.or.kr/base/contents/view?contentsNo=2&menuLevel=3&menuNo=4",
+    "bytes": 476475,
+    "caption": "화성행궁 입구"
+  },
+  {
+    "id": "C05",
+    "image": "assets/culture/c05.jpg",
+    "source": "https://www.visitsuwon.or.kr/template/resources/images/cont/img244.jpg",
+    "page": "https://www.visitsuwon.or.kr/base/contents/view?contentsNo=3&menuLevel=3&menuNo=9",
+    "bytes": 382107,
+    "caption": "화령전 전경"
+  },
+  {
+    "id": "C06",
+    "image": "assets/culture/c06.jpg",
+    "source": "https://www.visitsuwon.or.kr/template/resources/images/cont/img116.jpg",
+    "page": "https://www.visitsuwon.or.kr/base/board/read?boardManagementNo=9&boardNo=112&menuLevel=2&menuNo=60",
+    "bytes": 179174,
+    "caption": "연무대 국궁체험장과 과녁"
+  },
+  {
+    "id": "C07",
+    "image": "assets/culture/c07.jpg",
+    "source": "https://www.visitsuwon.or.kr/storage/ck/2025/04/jkKZKgWnU4kjZt0aQxtW.jpg",
+    "page": "https://www.visitsuwon.or.kr/base/board/read?boardManagementNo=9&boardNo=328&menuLevel=2&menuNo=60",
+    "bytes": 274351,
+    "caption": "화성행궁 전통 놀이 체험 공간"
+  },
+  {
+    "id": "C08",
+    "image": "assets/culture/c08.jpg",
+    "source": "https://www.visitsuwon.or.kr/storage/ck/2023/08/Jc2EGdMM3UmUhqZQ3Sje.jpg",
+    "page": "https://www.visitsuwon.or.kr/base/board/read?boardManagementNo=9&boardNo=248&menuLevel=2&menuNo=60",
+    "bytes": 193779,
+    "caption": "XR버스 내부와 투명 디스플레이"
+  },
+  {
+    "id": "C09",
+    "image": "assets/culture/c09.jpg",
+    "source": "https://www.visitsuwon.or.kr/template/resources/images/cont/img117.jpg",
+    "page": "https://www.visitsuwon.or.kr/base/board/read?boardManagementNo=9&boardNo=114&menuLevel=2&menuNo=60",
+    "bytes": 262157,
+    "caption": "수원화성을 순환하는 화성어차"
+  },
+  {
+    "id": "C10",
+    "image": "assets/culture/c10.jpg",
+    "source": "https://www.visitsuwon.or.kr/template/resources/images/cont/img211.jpg",
+    "page": "https://www.visitsuwon.or.kr/base/board/read?boardManagementNo=9&boardNo=109&menuLevel=2&menuNo=60",
+    "bytes": 178963,
+    "caption": "수원화성의 비밀 체험 모습"
+  },
+  {
+    "id": "C11",
+    "image": "assets/culture/c11.png",
+    "source": "https://www.visitsuwon.or.kr/storage/ck/2025/07/dS4cQuTys0pIC7JrBGjQ.png",
+    "page": "https://www.visitsuwon.or.kr/base/board/read?boardManagementNo=9&boardNo=334&menuLevel=2&menuNo=60",
+    "bytes": 148801,
+    "caption": "화성행궁 스탬프 투어 안내 이미지"
+  },
+  {
+    "id": "C12",
+    "image": "assets/culture/c12.jpg",
+    "source": "https://www.visitsuwon.or.kr/template/resources/images/cont/img163.jpg",
+    "page": "https://www.visitsuwon.or.kr/base/board/read?boardManagementNo=9&boardNo=110&menuLevel=2&menuNo=60",
+    "bytes": 147812,
+    "caption": "성곽길 스탬프를 찍는 모습"
+  }
+]
