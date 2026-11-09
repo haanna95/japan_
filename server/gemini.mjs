@@ -5,7 +5,7 @@ const fields={packaging:'반도체 패키징',materials:'반도체 소재',proce
 const styles={culture:'역사·문화',food:'미식',rest:'도시·휴식'};
 export function dates(start,count){return Array.from({length:count},(_,i)=>{const d=new Date(start+'T12:00:00Z');d.setUTCDate(d.getUTCDate()+i);return d.toISOString().slice(0,10);});}
 export function validateInput(v){
-  if(!v||!fields[v.field]||!Number.isInteger(v.people)||v.people<1||v.people>100||!Number.isInteger(v.days)||v.days<1||v.days>7)throw Error('연구 분야·인원(1~100명)·기간(1~7일)을 확인해 주세요.');
+  if(!v||!fields[v.field]||!Number.isInteger(v.people)||v.people<1||v.people>300||!Number.isInteger(v.days)||v.days<1||v.days>7)throw Error('연구 분야·인원(1~300명)·기간(1~7일)을 확인해 주세요.');
   if(typeof v.date!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(v.date)||!Number.isFinite(Date.parse(v.date))||dates(v.date,1)[0]!==v.date)throw Error('올바른 방문 시작일을 입력해 주세요.');
   const today=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
   if(v.date<today)throw Error('오늘 이후의 방문 시작일을 선택해 주세요.');
